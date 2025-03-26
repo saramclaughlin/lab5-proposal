@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ESS 330 Project Proposal - Lab 5</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-10daa034703793678e481cc8cee6d76f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+<meta name="citation_title" content="ESS 330 Project Proposal - Lab 5">
+<meta name="citation_author" content="Sara McLaughlin">
+<meta name="citation_author" content="Stephanie Farmer">
+<meta name="citation_author" content="Kiara Gleiser Gherson">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=The effect of aerosols to climate change and society;,citation_author=Bowen Zhang;,citation_author=others;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_issue=08;,citation_volume=8;,citation_journal_title=Journal of Geoscience and Environment Protection;,citation_publisher=Scientific Research Publishing;">
+<meta name="citation_reference" content="citation_title=Aerosols, climate, and the hydrological cycle;,citation_author=VCPJ Ramanathan;,citation_author=Paul J Crutzen;,citation_author=JT Kiehl;,citation_author=Daniel Rosenfeld;,citation_publication_date=2001;,citation_cover_date=2001;,citation_year=2001;,citation_issue=5549;,citation_volume=294;,citation_journal_title=science;,citation_publisher=American Association for the Advancement of Science;">
+<meta name="citation_reference" content="citation_title=National health surveillance of adults with disabilities, adults with intellectual and developmental disabilities, and adults with no disabilities;,citation_author=Susan M Havercamp;,citation_author=Haleigh M Scott;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_issue=2;,citation_volume=8;,citation_journal_title=Disability and health journal;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Health disparities among adults with physical disabilities or cognitive limitations compared to individuals with no disabilities in the united states;,citation_author=Amanda Reichard;,citation_author=Hayley Stolzle;,citation_author=Michael H Fox;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_issue=2;,citation_volume=4;,citation_journal_title=Disability and health journal;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Impact of sea-level rise on sea water intrusion in coastal aquifers;,citation_author=Adrian D Werner;,citation_author=Craig T Simmons;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_issue=2;,citation_volume=47;,citation_journal_title=Groundwater;,citation_publisher=Wiley Online Library;">
+<meta name="citation_reference" content="citation_title=Effects of sea-level rise and freshwater management on long-term water levels and water quality in the florida coastal everglades;,citation_author=Shimelis B Dessu;,citation_author=René M Price;,citation_author=Tiffany G Troxler;,citation_author=John S Kominoski;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_volume=211;,citation_journal_title=Journal of Environmental Management;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Hydrological functions of tropical forests: Not seeing the soil for the trees?;,citation_author=Leendert Adriaan Bruijnzeel;,citation_publication_date=2004;,citation_cover_date=2004;,citation_year=2004;,citation_issue=1;,citation_volume=104;,citation_journal_title=Agriculture, ecosystems &amp;amp;amp; environment;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Global consequences of land use;,citation_author=Jonathan A Foley;,citation_author=Ruth DeFries;,citation_author=Gregory P Asner;,citation_author=Carol Barford;,citation_author=Gordon Bonan;,citation_author=Stephen R Carpenter;,citation_author=F Stuart Chapin;,citation_author=Michael T Coe;,citation_author=Gretchen C Daily;,citation_author=Holly K Gibbs;,citation_author=others;,citation_publication_date=2005;,citation_cover_date=2005;,citation_year=2005;,citation_issue=5734;,citation_volume=309;,citation_journal_title=science;,citation_publisher=American Association for the Advancement of Science;">
+<meta name="citation_reference" content="citation_title=Urbanization as a major cause of biotic homogenization;,citation_author=Michael L McKinney;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_issue=3;,citation_volume=127;,citation_journal_title=Biological conservation;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Citizen science as a tool for augmenting museum collection data from urban areas;,citation_author=Dakota M Spear;,citation_author=Gregory B Pauly;,citation_author=Kristine Kaiser;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_volume=5;,citation_journal_title=Frontiers in Ecology and Evolution;,citation_publisher=Frontiers Media SA;">
+<meta name="citation_reference" content="citation_title=Surface urban heat island in china’s 32 major cities: Spatial patterns and drivers;,citation_author=Decheng Zhou;,citation_author=Shuqing Zhao;,citation_author=Shuguang Liu;,citation_author=Liangxia Zhang;,citation_author=Chao Zhu;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_volume=152;,citation_journal_title=Remote sensing of environment;,citation_publisher=Elsevier;">
+<meta name="citation_reference" content="citation_title=Assessing vulnerability to urban heat: A study of disproportionate heat exposure and access to refuge by socio-demographic status in portland, oregon;,citation_author=Jackson Voelkel;,citation_author=Dana Hellman;,citation_author=Ryu Sakuma;,citation_author=Vivek Shandas;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_issue=4;,citation_volume=15;,citation_journal_title=International journal of environmental research and public health;,citation_publisher=MDPI;">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">ESS 330 Project Proposal - Lab 5</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Authors</div>
+          <div class="quarto-title-meta-heading">Affiliation</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Sara McLaughlin </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Colorado State University
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Stephanie Farmer </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Colorado State University
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Kiara Gleiser Gherson </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Colorado State University
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></p></div></div></div>
+    </div>
+
+
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sara---proposal-1-seasonal-variations-in-aerosol-optical-depth-stemming-from-aerosol-concentrations-across-time." id="toc-sara---proposal-1-seasonal-variations-in-aerosol-optical-depth-stemming-from-aerosol-concentrations-across-time." class="nav-link active" data-scroll-target="#sara---proposal-1-seasonal-variations-in-aerosol-optical-depth-stemming-from-aerosol-concentrations-across-time.">Sara - Proposal 1: Seasonal variations in aerosol optical depth stemming from aerosol concentrations across time.</a></li>
+  <li><a href="#sara---proposal-2-disparities-in-adult-disabilities-and-income-across-the-u.s." id="toc-sara---proposal-2-disparities-in-adult-disabilities-and-income-across-the-u.s." class="nav-link" data-scroll-target="#sara---proposal-2-disparities-in-adult-disabilities-and-income-across-the-u.s.">Sara - Proposal 2: Disparities in adult disabilities and income across the U.S.</a></li>
+  <li><a href="#stephanie---proposal-1-sea-level-rise-effects-on-water-quality" id="toc-stephanie---proposal-1-sea-level-rise-effects-on-water-quality" class="nav-link" data-scroll-target="#stephanie---proposal-1-sea-level-rise-effects-on-water-quality">Stephanie - Proposal 1: Sea level rise effects on water quality</a></li>
+  <li><a href="#stephanie---proposal-2-forest-cover-change-and-its-impact-on-water-runoff" id="toc-stephanie---proposal-2-forest-cover-change-and-its-impact-on-water-runoff" class="nav-link" data-scroll-target="#stephanie---proposal-2-forest-cover-change-and-its-impact-on-water-runoff">Stephanie - Proposal 2: Forest Cover change and its impact on water runoff</a></li>
+  <li><a href="#kiara---proposal-1-biodiversity-trends-in-relation-to-urbanization" id="toc-kiara---proposal-1-biodiversity-trends-in-relation-to-urbanization" class="nav-link" data-scroll-target="#kiara---proposal-1-biodiversity-trends-in-relation-to-urbanization">Kiara - Proposal 1: Biodiversity trends in relation to urbanization</a></li>
+  <li><a href="#kiara---proposal-2-how-land-use-impacts-city-temperatures" id="toc-kiara---proposal-2-how-land-use-impacts-city-temperatures" class="nav-link" data-scroll-target="#kiara---proposal-2-how-land-use-impacts-city-temperatures">Kiara - Proposal 2: How land use impacts city temperatures</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<section id="sara---proposal-1-seasonal-variations-in-aerosol-optical-depth-stemming-from-aerosol-concentrations-across-time." class="level1">
+<h1>Sara - Proposal 1: Seasonal variations in aerosol optical depth stemming from aerosol concentrations across time.</h1>
+<p>One factor of anthropogenic induced climate change exacerbation comes from small, man-made particles called aerosols that are being constantly emitted into the atmosphere <span class="citation" data-cites="ramanathan2001">(<a href="#ref-ramanathan2001" role="doc-biblioref">Ramanathan et al., 2001</a>)</span>. These aerosols are harmful for the environment as they increase solar radiation absorption and create clouds that produce less precipitation. Therefore, the release of these particles results in increased global atmospheric heating, severe changes in temperatures, and decreased rainfall, all of which are large parts of the overall issue of climate change <span class="citation" data-cites="ramanathan2001">(<a href="#ref-ramanathan2001" role="doc-biblioref">Ramanathan et al., 2001</a>)</span>. Further, although aerosols catalyze climate change, they also mask about half of global warming via aerosol cooling, leading to an underestimation of actual global temperature increase <span class="citation" data-cites="zhang2020">(<a href="#ref-zhang2020" role="doc-biblioref">Zhang et al., 2020</a>)</span>. Different from greenhouse gas emissions, some forms of aerosol pollutants result in atmospheric cooling. However, if aerosols pollution were to drop, the masked warming temperatures would be revealed rapidly.</p>
+</section>
+<section id="sara---proposal-2-disparities-in-adult-disabilities-and-income-across-the-u.s." class="level1">
+<h1>Sara - Proposal 2: Disparities in adult disabilities and income across the U.S.</h1>
+<p>Disabled people, including those with intellectual or developmental disabilities, often exhibit less access to preventative and mental health care than able bodied people do <span class="citation" data-cites="havercamp2015">(<a href="#ref-havercamp2015" role="doc-biblioref">Havercamp &amp; Scott, 2015</a>)</span>. The disparities in healthcare access across the U.S. is a large issue in today’s society, resulting in inequity and creating divides in overall quality of life. Specifically, compared to those without any disability, those with a disability experience many barriers to preventive, curative, and therapeutic healthcare access <span class="citation" data-cites="reichard2011">(<a href="#ref-reichard2011" role="doc-biblioref">Reichard et al., 2011</a>)</span>. Overall, there are many unjust disparities in disability types, and one of those may also include income. Both income and disability prevalence vary across states in the U.S., and it is important to understand if these two variables are correlated in order to best assist and aid those impacted by either of these challenges. Further, it is important to understand if income is a predictor variable for disability to provide the best preventative care.</p>
+<p>Through this analysis, I aim to determine trends in disability forms across the U.S. and assess whether or not income is a driving factor for disability. My research question for this study is: What are the disparities in disability type across different states in the U.S., and is there a relationship between income and the prevalence of disability?</p>
+<p>I will use the following datasets from the DHDS and U.S. Census to conduct this study: https://chronicdata.cdc.gov/Disability-Health/DHDS-Prevalence-of-Disability-Status-and-Types/s2qv-b27b/about_data and https://data.census.gov/table/ACSDT1Y2023.B18131?q=disability+type. This study will be conducted on a spatial scale, extending across the U.S. Thus, I will use the following variables: response (disability type), location (state), and income. I will test my hypothesis by first merging the two datasets by location, then create a ggplot to visualize disability disparities across states, then I will employ a linear regression model for disabilities vs income, and finally create another ggplot to visualize disabilities vs income across states. From this analysis, I expect to find that the prevalence of disability types does vary across the U.S., and that a lower income will correlate with a higher prevalence of disability. This is important because it is vital to understand the role that socioeconomic status plays in health outcomes. If my expected outcome is correct, this may suggest a need for support programs for better healthcare, job access, and disability aid targeting those most in need. Further, the outcome may indicate a need for more affordable healthcare services.</p>
+</section>
+<section id="stephanie---proposal-1-sea-level-rise-effects-on-water-quality" class="level1">
+<h1>Stephanie - Proposal 1: Sea level rise effects on water quality</h1>
+<p>Sea Level rise has had significant impacts on water quality. As the sea level increases, saltwater intrusion can contaminate freshwater aquifers which reduce the availability of clean drinking water <span class="citation" data-cites="werner2009">(<a href="#ref-werner2009" role="doc-biblioref">Werner &amp; Simmons, 2009</a>)</span>. The intrusion of saltwater also degrades wetlands, which act as a natural water filter and are habitats for diverse aquatic species. The decrease in wetlands diminishes their ability to buffer against storm surges and filter pollutants, further compromising the water quality <span class="citation" data-cites="dessu2018">(<a href="#ref-dessu2018" role="doc-biblioref">Dessu et al., 2018</a>)</span>. Also, rising sea levels lead to more frequent and severe coastal flooding which can result in an overflow of sewage systems and carry pollutants into waterways. This increase in contamination can endanger public health and harm aquatic ecosystems. Understanding and addressing the effects of sea level rise on water quality is significant for protecting freshwater resources, preserving ecosystems and ensuring the sustainability of coastal communities.</p>
+<p>Objective: To investigate how sea level rise impacts the quality of coastal waters. Hypothesis: sea level rise causes the intrusion of saltwater into freshwater aquifers and rivers which reduces freshwater availability and degrades water quality Proposed methods: I will integrate two data sets: (1) sea level data from NOAA’s Tides and Current database and (2) freshwater quality data from the USGS National Water Information System. The study will focus on coastal freshwater aquifers and rivers in the southeastern United States (Florida). I haven’t decided how long of a period to look at- would 15-20 years be a good amount of time? I will use linear regression models to look at the relationship between sea level rise and changes in freshwater salinity and perform paired t-tests to compare water quality before and after significant sea level rise events.</p>
+<p>I expect to find that sea level rise is driving freshwater salinization over time. This would result in higher salinity levels, lower water quality and reduced freshwater availability. This outcome is important because it highlights the growing threat to freshwater resources for potable use, which could impact agriculture, drinking water supplies, and ecosystem health. Identifying this relationship could help instruct coastal management policies and guide adaptation strategies to protect freshwater resources in vulnerable coastal regions.</p>
+</section>
+<section id="stephanie---proposal-2-forest-cover-change-and-its-impact-on-water-runoff" class="level1">
+<h1>Stephanie - Proposal 2: Forest Cover change and its impact on water runoff</h1>
+<p>Forest cover plays a crucial role in regulating water runoff by acting like a natural buffer, reducing erosion, absorbing rainwater and promoting groundwater recharge. Deforestation or land-use change can significantly alter the hydrological cycle, leading to increased surface runoff, soil erosion, and flooding. Understanding how changes in forest cover impact water runoff is critical for sustainable land management and flood control as global deforestation rates rise. Studies have shown that areas with reduced forest cover experience higher runoff rates and water quality degradation <span class="citation" data-cites="bruijnzeel2004">(<a href="#ref-bruijnzeel2004" role="doc-biblioref">Bruijnzeel, 2004</a>)</span>. Additionally, forest cover is vital for mitigating the impacts of climate change, as forests contribute to carbon sequestration and help maintain hydrological balance <span class="citation" data-cites="foley2005">(<a href="#ref-foley2005" role="doc-biblioref">Foley et al., 2005</a>)</span>. This project sees the significance in how deforestation and land-use changes can disrupt hydrological systems, affecting both water availability and quality, which are essential for ecosystems and human communities.</p>
+<p>Objective: To investigate how forest cover changes effect surface water runoff, specifically examining whether deforestation leads to measurable differences in runoff volume and water quality. Hypothesis: Decreased forest cover leads to higher surface water runoff rates and decreased water quality due to reduced water retention and increased soil erosion. Methods: I will use two main datasets: (1) Forest cover data from the Global Forest Change dataset to track forest loss and gain and (2) surface water runoff data from the USGS National Water Information System to measure streamflow and discharge rates. The study will focus on a 20 year period (2005-2025) in a forested watershed region prone to deforestation like the Amazon river basin. In Rstudio , I will use tidyverse for data cleaning and visualization and sf or raster for spatial analysis. I will perform linear regression models to assess the relationship between forest cover change and runoff volume. I will also use paired t-tests to compare pre and post deforestation values, determining of forest loss significantly impacts water runoff patterns</p>
+<p>I expect to find that forest cover loss leads to higher surface water runoff rates and increased water turbidity (decreased water quality) due to reduced water infiltration and increased soil erosion. This outcome is important because it highlights the critical role of forests in regulating hydrological cycles which has implications for flood management, water quality conservation and land use policies. Understanding this relationship can help policymakers and conservationists develop sustainable forest management practices to mitigate the negative hydrological effects of deforestation and promote afforestation efforts in vulnerable watersheds.</p>
+</section>
+<section id="kiara---proposal-1-biodiversity-trends-in-relation-to-urbanization" class="level1">
+<h1>Kiara - Proposal 1: Biodiversity trends in relation to urbanization</h1>
+<p>The expansion of urban areas is one of the most important threats to biodiversity on a global level. When natural habitats are fragmented or replaced by impermeable surfaces, the species that rely on these ecosystems face a greater risk of local extinction. Recent studies have shown that urbanization often leads to biotic homogenization, where generalist species thrive at the expense of specialists <span class="citation" data-cites="mckinney2006">(<a href="#ref-mckinney2006" role="doc-biblioref">McKinney, 2006</a>)</span>. Understanding the spatial relationship between urban growth and biodiversity trends can help guide urban planning and conservation strategies. Platforms like iNaturalist have provided access without precedent to data of species occurrence, which permits analysis at a finer scale of biodiversity patterns across urban gradients <span class="citation" data-cites="spear2017">(<a href="#ref-spear2017" role="doc-biblioref">Spear et al., 2017</a>)</span>. This project will explore how species richness varies with land use across different metropolitan areas.</p>
+<p>Objective: Analyze how species richness and composition varies in urban gradients, suburban and rural gradients in multiple cities in the US Hypothesis: The areas with higher levels of urbanization will show decreased species richness and a higher dominance of generalist species compared to less urban areas. Methods: We will use iNaturalist species observation data (iNaturalist https://www.inaturalist.org) and and overlay it with land use data from the USGS National Land Cover Database (https://www.mrlc.gov/data). We will focus on 3 cities that represent different urban forms. We will categorize the locations by urban, suburban and rural based on land cover classifications. Biodiversity metrics will be calculated for each zone, like richness of species and Shannon diversity. The spatial analysis wil be done using R packages: “sf”, “raster” and “vegan”. The temporal scope will focus on observations from 2018–2023 to capture recent patterns.</p>
+<p>Compared to suburban and rural settings, we anticipate that urban areas will have a higher percentage of non-native or generalist species and a lower species richness. These results could guide efforts to conserve urban biodiversity and identify areas where investments in green infrastructure might have the greatest environmental benefits.</p>
+</section>
+<section id="kiara---proposal-2-how-land-use-impacts-city-temperatures" class="level1">
+<h1>Kiara - Proposal 2: How land use impacts city temperatures</h1>
+<p>Localized temperature increases in urban areas relative to nearby rural zones are known as urban heat islands (UHIs), and they are mostly brought about by variations in land cover. Roads, buildings, and other impermeable surfaces absorb and hold heat, while vegetation cools through evapotranspiration <span class="citation" data-cites="zhou2014">(<a href="#ref-zhou2014" role="doc-biblioref">Zhou et al., 2014</a>)</span>. The amount of green space, surface albedo, and development density in a city all affect how severe the impacts of UHI are. Urban resilience planning requires an understanding of how land cover affects UHI because high heat events are becoming more frequent as a result of climate change <span class="citation" data-cites="voelkel2018">(<a href="#ref-voelkel2018" role="doc-biblioref">Voelkel et al., 2018</a>)</span>. The purpose of this study is to measure the correlation between surface temperature and land cover type in several cities.</p>
+<p>Objective: to assess the relationship between land surface temperature (LST) and plant cover in various U.S. urban zones. Hypothesis: In metropolitan environments, there will be a considerable correlation between lower land surface temperatures and higher vegetation cover. Methods: We will investigate spatial relationships across five U.S. cities with different climates (e.g., Phoenix, Atlanta, Minneapolis, Los Angeles, and Miami) by superimposing NLCD land cover categorization (https://www.mrlc.gov/data) over MODIS Land Surface Temperature (MOD11A2) data. Over the course of five years (2018–2022), the LST and vegetation indices (such as the NDVI) will be averaged for the summer months of June–August. The relationship between land cover categories (forest, developed open space, high-intensity developed, etc.) and temperature variation will be evaluated using regression models. Spatial joining and visualization will be done using R’s GIS utilities (terra, sf, and tidyverse).</p>
+<p>We predict lower mean surface temperatures in cities with larger percentages of vegetated areas (such as parks and trees). This result can be shared with local planners as proof for policy interventions like tree canopy expansion, and it will highlight the importance of urban greening in climate adaptation measures.</p>
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-bruijnzeel2004" class="csl-entry" role="listitem">
+Bruijnzeel, L. A. (2004). Hydrological functions of tropical forests: Not seeing the soil for the trees? <em>Agriculture, Ecosystems &amp; Environment</em>, <em>104</em>(1), 185–228.
+</div>
+<div id="ref-dessu2018" class="csl-entry" role="listitem">
+Dessu, S. B., Price, R. M., Troxler, T. G., &amp; Kominoski, J. S. (2018). Effects of sea-level rise and freshwater management on long-term water levels and water quality in the florida coastal everglades. <em>Journal of Environmental Management</em>, <em>211</em>, 164–176.
+</div>
+<div id="ref-foley2005" class="csl-entry" role="listitem">
+Foley, J. A., DeFries, R., Asner, G. P., Barford, C., Bonan, G., Carpenter, S. R., Chapin, F. S., Coe, M. T., Daily, G. C., Gibbs, H. K., et al. (2005). Global consequences of land use. <em>Science</em>, <em>309</em>(5734), 570–574.
+</div>
+<div id="ref-havercamp2015" class="csl-entry" role="listitem">
+Havercamp, S. M., &amp; Scott, H. M. (2015). National health surveillance of adults with disabilities, adults with intellectual and developmental disabilities, and adults with no disabilities. <em>Disability and Health Journal</em>, <em>8</em>(2), 165–172.
+</div>
+<div id="ref-mckinney2006" class="csl-entry" role="listitem">
+McKinney, M. L. (2006). Urbanization as a major cause of biotic homogenization. <em>Biological Conservation</em>, <em>127</em>(3), 247–260.
+</div>
+<div id="ref-ramanathan2001" class="csl-entry" role="listitem">
+Ramanathan, V., Crutzen, P. J., Kiehl, J., &amp; Rosenfeld, D. (2001). Aerosols, climate, and the hydrological cycle. <em>Science</em>, <em>294</em>(5549), 2119–2124.
+</div>
+<div id="ref-reichard2011" class="csl-entry" role="listitem">
+Reichard, A., Stolzle, H., &amp; Fox, M. H. (2011). Health disparities among adults with physical disabilities or cognitive limitations compared to individuals with no disabilities in the united states. <em>Disability and Health Journal</em>, <em>4</em>(2), 59–67.
+</div>
+<div id="ref-spear2017" class="csl-entry" role="listitem">
+Spear, D. M., Pauly, G. B., &amp; Kaiser, K. (2017). Citizen science as a tool for augmenting museum collection data from urban areas. <em>Frontiers in Ecology and Evolution</em>, <em>5</em>, 86.
+</div>
+<div id="ref-voelkel2018" class="csl-entry" role="listitem">
+Voelkel, J., Hellman, D., Sakuma, R., &amp; Shandas, V. (2018). Assessing vulnerability to urban heat: A study of disproportionate heat exposure and access to refuge by socio-demographic status in portland, oregon. <em>International Journal of Environmental Research and Public Health</em>, <em>15</em>(4), 640.
+</div>
+<div id="ref-werner2009" class="csl-entry" role="listitem">
+Werner, A. D., &amp; Simmons, C. T. (2009). Impact of sea-level rise on sea water intrusion in coastal aquifers. <em>Groundwater</em>, <em>47</em>(2), 197–204.
+</div>
+<div id="ref-zhang2020" class="csl-entry" role="listitem">
+Zhang, B. et al. (2020). The effect of aerosols to climate change and society. <em>Journal of Geoscience and Environment Protection</em>, <em>8</em>(08), 55.
+</div>
+<div id="ref-zhou2014" class="csl-entry" role="listitem">
+Zhou, D., Zhao, S., Liu, S., Zhang, L., &amp; Zhu, C. (2014). Surface urban heat island in china’s 32 major cities: Spatial patterns and drivers. <em>Remote Sensing of Environment</em>, <em>152</em>, 51–61.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

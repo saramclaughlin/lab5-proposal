@@ -1,12 +1,68 @@
 ---
 title: ESS 330 Project Proposal - Lab 5
 authors:
-  - name: Norah Jones
-    affiliation: The University
+  - name: Sara McLaughlin
+    affiliation: Colorado State University
     roles: writing
     corresponding: true
+    
+  - name: Stephanie Farmer
+    affiliation: Colorado State University
+    roles: writing
+    
+  - name: Kiara Gleiser Gherson
+    affiliation: Colorado State University
+    roles: writing
+    
 bibliography: references.bib
+csl: apa.csl
 ---
+# Sara - Proposal 1: Seasonal variations in aerosol optical depth stemming from aerosol concentrations across time.
+One factor of anthropogenic induced climate change exacerbation comes from small, man-made particles called aerosols that are being constantly emitted into the atmosphere [@ramanathan2001]. These aerosols are harmful for the environment as they increase solar radiation absorption and create clouds that produce less precipitation. Therefore, the release of these particles results in increased global atmospheric heating, severe changes in temperatures, and decreased rainfall, all of which are large parts of the overall issue of climate change [@ramanathan2001]. Further, although aerosols catalyze climate change, they also mask about half of global warming via aerosol cooling, leading to an underestimation of actual global temperature increase [@zhang2020]. Different from greenhouse gas emissions, some forms of aerosol pollutants result in atmospheric cooling. However, if aerosols pollution were to drop, the masked warming temperatures would be revealed rapidly. 
 
-## Section
-This is a simple placeholder for the manuscript's main document [@knuth84].
+
+# Sara - Proposal 2: Disparities in adult disabilities and income across the U.S.
+Disabled people, including those with intellectual or developmental disabilities, often exhibit less access to preventative and mental health care than able bodied people do [@havercamp2015]. The disparities in healthcare access across the U.S. is a large issue in today's society, resulting in inequity and creating divides in overall quality of life. Specifically, compared to those without any disability, those with a disability experience many barriers to preventive, curative, and therapeutic healthcare access [@reichard2011]. Overall, there are many unjust disparities in disability types, and one of those may also include income. Both income and disability prevalence vary across states in the U.S., and it is important to understand if these two variables are correlated in order to best assist and aid those impacted by either of these challenges. Further, it is important to understand if income is a predictor variable for disability to provide the best preventative care. 
+
+Through this analysis, I aim to determine trends in disability forms across the U.S. and assess whether or not income is a driving factor for disability. My research question for this study is: What are the disparities in disability type across different states in the U.S., and is there a relationship between income and the prevalence of disability?
+
+I will use the following datasets from the DHDS and U.S. Census to conduct this study: https://chronicdata.cdc.gov/Disability-Health/DHDS-Prevalence-of-Disability-Status-and-Types/s2qv-b27b/about_data and https://data.census.gov/table/ACSDT1Y2023.B18131?q=disability+type. This study will be conducted on a spatial scale, extending across the U.S. Thus, I will use the following variables: response (disability type), location (state), and income. I will test my hypothesis by first merging the two datasets by location, then create a ggplot to visualize disability disparities across states, then I will employ a linear regression model for disabilities vs income, and finally create another ggplot to visualize disabilities vs income across states. From this analysis, I expect to find that the prevalence of disability types does vary across the U.S., and that a lower income will correlate with a higher prevalence of disability. This is important because it is vital to understand the role that socioeconomic status plays in health outcomes. If my expected outcome is correct, this may suggest a need for support programs for better healthcare, job access, and disability aid targeting those most in need. Further, the outcome may indicate a need for more affordable healthcare services. 
+
+# Stephanie - Proposal 1: Sea level rise effects on water quality
+Sea Level rise has had significant impacts on water quality. As the sea level increases, saltwater intrusion can contaminate freshwater aquifers which reduce the availability of clean drinking water [@werner2009]. The intrusion of saltwater also degrades wetlands, which act as a natural water filter and are habitats for diverse aquatic species. The decrease in wetlands diminishes their ability to buffer against storm surges and filter pollutants, further compromising the water quality [@dessu2018]. Also, rising sea levels lead to more frequent and severe coastal flooding which can result in an overflow of sewage systems and carry pollutants into waterways. This increase in contamination can endanger public health and harm aquatic ecosystems. Understanding and addressing the effects of sea level rise on water quality is significant for protecting freshwater resources, preserving ecosystems and ensuring the sustainability of coastal communities.
+
+Objective: To investigate how sea level rise impacts the quality of coastal waters.
+Hypothesis: sea level rise causes the intrusion of saltwater into freshwater aquifers and rivers which reduces freshwater availability and degrades water quality
+Proposed methods:
+I will integrate two data sets: (1) sea level data from NOAA’s Tides and Current database and (2) freshwater quality data from the USGS National Water Information System. The study will focus on coastal freshwater aquifers and rivers in the southeastern United States (Florida). I haven't decided how long of a period to look at- would 15-20 years be a good amount of time? I will use linear regression models to look at the relationship between sea level rise and changes in freshwater salinity and perform paired t-tests to compare water quality before and after significant sea level rise events.
+
+I expect to find that sea level rise is driving freshwater salinization over time. This would result in higher salinity levels, lower water quality and reduced freshwater availability. This outcome is important because it highlights the growing threat to freshwater resources for potable use, which could impact agriculture, drinking water supplies, and ecosystem health. Identifying this relationship could help instruct coastal management policies and guide adaptation strategies to protect freshwater resources in vulnerable coastal regions.
+
+# Stephanie - Proposal 2: Forest Cover change and its impact on water runoff
+Forest cover plays a crucial role in regulating water runoff by acting like a natural buffer, reducing erosion, absorbing rainwater and promoting groundwater recharge. Deforestation or land-use change can significantly alter the hydrological cycle, leading to increased surface runoff, soil erosion, and flooding. Understanding how changes in forest cover impact water runoff is critical for sustainable land management and flood control as global deforestation rates rise. Studies have shown that areas with reduced forest cover experience higher runoff rates and water quality degradation [@bruijnzeel2004]. Additionally, forest cover is vital for mitigating the impacts of climate change, as forests contribute to carbon sequestration and help maintain hydrological balance [@foley2005]. This project sees the significance in how deforestation and land-use changes can disrupt hydrological systems, affecting both water availability and quality, which are essential for ecosystems and human communities.
+
+Objective: To investigate how forest cover changes effect surface water runoff, specifically examining whether deforestation leads to measurable differences in runoff volume and water quality.
+Hypothesis: Decreased forest cover leads to higher surface water runoff rates and decreased water quality due to reduced water retention and increased soil erosion.
+Methods: 
+I will use two main datasets: (1) Forest cover data from the Global Forest Change dataset to track forest loss and gain and (2) surface water runoff data from the USGS National Water Information System to measure streamflow and discharge rates. The study will focus on a 20 year period (2005-2025) in a forested watershed region prone to deforestation like the Amazon river basin. In Rstudio , I will use tidyverse for data cleaning and visualization and sf or raster for spatial analysis. I will perform linear regression models to assess the relationship between forest cover change and runoff volume. I will also use paired t-tests to compare pre and post deforestation values, determining of forest loss significantly impacts water runoff patterns
+
+I expect to find that forest cover loss leads to higher surface water runoff rates and increased water turbidity (decreased water quality) due to reduced water infiltration and increased soil erosion. This outcome is important because it highlights the critical role of forests in regulating hydrological cycles which has implications for flood management, water quality conservation and land use policies. Understanding this relationship can help policymakers and conservationists develop sustainable forest management practices to mitigate the negative hydrological effects of deforestation and promote afforestation efforts in vulnerable watersheds.
+
+# Kiara - Proposal 1: Biodiversity trends in relation to urbanization
+The expansion of urban areas is one of the most important threats to biodiversity on a global level. When natural habitats are fragmented or replaced by impermeable surfaces, the species that rely on these ecosystems face a greater risk of local extinction. Recent studies have shown that urbanization often leads to biotic homogenization, where generalist species thrive at the expense of specialists [@mckinney2006]. Understanding the spatial relationship between urban growth and biodiversity trends can help guide urban planning and conservation strategies. Platforms like iNaturalist have provided access without precedent to data of species occurrence, which permits analysis at a finer scale of biodiversity patterns across urban gradients [@spear2017]. This project will explore how species richness varies with land use across different metropolitan areas.
+
+Objective: Analyze how species richness and composition varies in urban gradients, suburban and rural gradients in multiple cities in the US
+Hypothesis: The areas with higher levels of urbanization will show decreased species richness and a higher dominance of generalist species compared to less urban areas.
+Methods: We will use iNaturalist species observation data (iNaturalist  https://www.inaturalist.org) and and overlay it with land use data from the USGS National Land Cover Database (https://www.mrlc.gov/data). We will focus on 3 cities that represent different urban forms. We will categorize the locations by urban, suburban and rural based on land cover classifications. Biodiversity metrics will be calculated for each zone, like richness of species and Shannon diversity. The spatial analysis wil be done using R packages: “sf”, “raster” and “vegan”. The temporal scope will focus on observations from 2018–2023 to capture recent patterns.
+
+Compared to suburban and rural settings, we anticipate that urban areas will have a higher percentage of non-native or generalist species and a lower species richness. These results could guide efforts to conserve urban biodiversity and identify areas where investments in green infrastructure might have the greatest environmental benefits.
+
+# Kiara - Proposal 2: How land use impacts city temperatures
+Localized temperature increases in urban areas relative to nearby rural zones are known as urban heat islands (UHIs), and they are mostly brought about by variations in land cover. Roads, buildings, and other impermeable surfaces absorb and hold heat, while vegetation cools through evapotranspiration [@zhou2014]. The amount of green space, surface albedo, and development density in a city all affect how severe the impacts of UHI are. Urban resilience planning requires an understanding of how land cover affects UHI because high heat events are becoming more frequent as a result of climate change [@voelkel2018]. The purpose of this study is to measure the correlation between surface temperature and land cover type in several cities.
+
+Objective: to assess the relationship between land surface temperature (LST) and plant cover in various U.S. urban zones.
+Hypothesis: In metropolitan environments, there will be a considerable correlation between lower land surface temperatures and higher vegetation cover.
+Methods:
+We will investigate spatial relationships across five U.S. cities with different climates (e.g., Phoenix, Atlanta, Minneapolis, Los Angeles, and Miami) by superimposing NLCD land cover categorization (https://www.mrlc.gov/data) over MODIS Land Surface Temperature (MOD11A2) data. Over the course of five years (2018–2022), the LST and vegetation indices (such as the NDVI) will be averaged for the summer months of June–August. The relationship between land cover categories (forest, developed open space, high-intensity developed, etc.) and temperature variation will be evaluated using regression models. Spatial joining and visualization will be done using R's GIS utilities (terra, sf, and tidyverse).
+
+We predict lower mean surface temperatures in cities with larger percentages of vegetated areas (such as parks and trees). This result can be shared with local planners as proof for policy interventions like tree canopy expansion, and it will highlight the importance of urban greening in climate adaptation measures.
